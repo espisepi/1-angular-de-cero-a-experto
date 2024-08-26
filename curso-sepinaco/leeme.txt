@@ -11,7 +11,15 @@
 ===============================
 
 
+- Instalar angular
+
+npm install -g @angular/cli
 
 - Crear proyecto en angular con modulos:
 
 ng new <nombre-de-la-aplicacion> --standalone false
+
+- Ejecutar proyecto
+
+ng serve -o  (-o indica que se abra automaticamente el navegador)
+
