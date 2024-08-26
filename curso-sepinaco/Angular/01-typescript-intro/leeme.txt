@@ -1,0 +1,10 @@
+- npm create vite
+-- vanilla ts option
+
+- npm install
+
+- npm run dev
+
+
+
+

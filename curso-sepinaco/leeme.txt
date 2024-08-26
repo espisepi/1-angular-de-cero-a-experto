@@ -1,10 +1,17 @@
-- npm create vite
--- vanilla ts option
-
-- npm install
-
-- npm run dev
 
 
+- Angular estructura:
+
+====== Modulo ================
+=                            =
+=  Componentes    Rutas      =
+=                            =
+=  Directivas    Servicios   =
+=                            =
+===============================
 
 
+
+- Crear proyecto en angular con modulos:
+
+ng new <nombre-de-la-aplicacion> --standalone false
