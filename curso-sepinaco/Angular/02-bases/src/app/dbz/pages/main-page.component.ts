@@ -23,6 +23,9 @@ export class MainPageComponent {
     }
   ];
 
-  constructor() { }
+  onNewCharacter( character: Character ): void {
+    console.log('MainPage');
+    console.log(character);
+  }
 
 }
