@@ -49,4 +49,11 @@ todo el html escrito en una pagina
 
 En los html al poner los atributos con [] 
 podemos poner expresiones javascript manejadas por angular
-por ejemplo: 
+por ejemplo: [ngClass]
+
+[(ngModel)] Un atributo que lanza un evento aka two way binding
+
+Los parentesis () indican eventos (llama a metodos): (click)="clickMethod()"
+Los corchetes [] indican atributos: [characterList]="characterList"
+
+
