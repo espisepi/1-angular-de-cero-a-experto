@@ -39,4 +39,16 @@ export class HeroComponent {
     this.age = 25;
   }
 
+  resetForm(): void {
+    this.name = 'ironman';
+    this.age = 45;
+
+    // Si modifico el html de esta manera, Angular no lo tiene en cuenta
+    // En su ciclo de deteccion de cambios
+    // Por lo tanto, puedo tener resultados inesperados
+    // document.querySelectorAll('h1')!.forEach(element => {
+    //   element.innerHTML = '<h1>Desde Angular</h1>';
+    // });
+  }
+
 }
