@@ -29,3 +29,13 @@ ng serve -o  (-o indica que se abra automaticamente el navegador)
 - Crear nuevo Componente
 
 ng g c heroes/hero
+
+- Crear nuevo Modulo
+
+ng g m dbz
+
+
+===============================
+
+Las paginas (pages) son componentes que utilizamos en el router
+
