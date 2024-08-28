@@ -1,1 +1,28 @@
-<p>list works!</p>
+<h3>Listado de Heroes</h3>
+
+<!--
+<div *ngIf="deletedHero">
+  <h3>Heroe borrado <small class="text-danger"> {{ deletedHero }} </small></h3>
+</div>
+<h3 *ngIf="!deletedHero">No ha borrado nada</h3>
+-->
+
+<!-- Lo que pongamos en el else es el nombre de una referencia de una etiqueta que es la que mostramos en caso de no cumplirse la condicion if -->
+<div *ngIf="deletedHero; else nothingWasDeleted">
+  <h3>Heroe borrado <small class="text-danger"> {{ deletedHero }} </small></h3>
+</div>
+<!-- ng-template hace que no tengamos que poner una etiqueta div que nos rompa los estilos -->
+<ng-template #nothingWasDeleted>
+  <h3>No ha borrado nada.</h3>
+</ng-template>
+
+<button
+  *ngIf="heroNames.length > 0"
+  (click)="removeLastHero()"
+  class="btn btn-outline-danger">
+  Borrar ultimo heroe
+</button>
+
+<ul class="mt-2 list-group">
+  <li *ngFor="let name of heroNames">{{ name }}</li>
+</ul>
