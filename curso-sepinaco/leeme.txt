@@ -37,5 +37,12 @@ ng g m dbz
 
 ===============================
 
+Paginas:
+
 Las paginas (pages) son componentes que utilizamos en el router
 
+Las paginas sirven para realizar el primer mockeado html
+y despues se va dividiendo en componentes
+todo el html escrito en una pagina
+
+================================
