@@ -46,3 +46,7 @@ y despues se va dividiendo en componentes
 todo el html escrito en una pagina
 
 ================================
+
+En los html al poner los atributos con [] 
+podemos poner expresiones javascript manejadas por angular
+por ejemplo: 
