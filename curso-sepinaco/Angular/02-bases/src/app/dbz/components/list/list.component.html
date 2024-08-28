@@ -10,7 +10,14 @@
         let isEven = even;
         let isOdd = odd;
         "
-        class="list-group-item">
+        class="list-group-item"
+        [ngClass]="{
+          'list-group-item-dark': isLast,
+          'list-group-item-primary': isEven
+        }">
+        <!-- [ngClass]="{ 'list-group-item-success': true }"> -->
+        <!-- class="list-group-item {{ i === 0 ? 'list-group-item-success': '' }}"> -->
+
 
         <span class="text-primary"> {{ i }} </span>
 
