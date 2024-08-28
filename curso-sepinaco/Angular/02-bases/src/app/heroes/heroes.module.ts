@@ -13,6 +13,9 @@ import { CommonModule } from '@angular/common';
   ],
   // En el apartado declarations ponemos los componentes
   // que han sido creados para este modulo de HeroesModule
+  // Y se pueden usar entre ellos, es decir,
+  // en el html de HeroComponent puedo incluir
+  // el componente ListComponent y viceversa
   declarations: [
     HeroComponent,
     ListComponent,
