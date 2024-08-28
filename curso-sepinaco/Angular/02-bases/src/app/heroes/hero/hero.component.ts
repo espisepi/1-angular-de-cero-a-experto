@@ -25,4 +25,18 @@ export class HeroComponent {
     return `${ this.name } - ${ this.age }`;
   }
 
+  // Cuando hacemos un cambio de atributo
+  // Angular solo actualiza en el html
+  // Ese atributo cambiado
+  // Y no actualiza todo el html
+  // Por lo tanto, tiene buena performance haciendo eso
+  changeHero(): void {
+    // throw 'Metodo no implementado';
+    this.name = 'Spiderman'
+  }
+
+  changeAge(): void {
+    this.age = 25;
+  }
+
 }
