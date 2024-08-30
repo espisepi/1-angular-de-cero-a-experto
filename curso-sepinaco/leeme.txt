@@ -59,3 +59,9 @@ Los corchetes [] indican atributos: [characterList]="characterList"
 ================================
 
 con el codigo "debugger" podemos hacer puntos de ruptura,
+
+================================
+
+ npm i uuid 
+
+ npm i --save-dev @types/uuid
