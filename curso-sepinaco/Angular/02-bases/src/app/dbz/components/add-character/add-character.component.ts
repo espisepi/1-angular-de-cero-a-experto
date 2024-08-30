@@ -18,6 +18,10 @@ export class AddCharacterComponent {
   };
 
   emitCharacter(): void {
+
+    // Con este codigo podemos hacer un punto de ruptura
+    // debugger;
+
     console.log(this.character);
 
     // mini-validacion

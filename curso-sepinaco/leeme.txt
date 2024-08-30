@@ -56,4 +56,6 @@ por ejemplo: [ngClass]
 Los parentesis () indican eventos (llama a metodos): (click)="clickMethod()"
 Los corchetes [] indican atributos: [characterList]="characterList"
 
+================================
 
+con el codigo "debugger" podemos hacer puntos de ruptura,

@@ -10,7 +10,7 @@
         let isEven = even;
         let isOdd = odd;
         "
-        class="list-group-item"
+        class="list-group-item d-flex justify-content-betwee align-items-center"
         [ngClass]="{
           'list-group-item-dark': isLast,
           'list-group-item-primary': isEven
@@ -19,23 +19,27 @@
         <!-- class="list-group-item {{ i === 0 ? 'list-group-item-success': '' }}"> -->
 
 
-        <span class="text-primary"> {{ i }} </span>
+        <div>
+          <span class="text-primary"> {{ i }} </span>
 
-        <span>{{ character.name }} - </span>
+          <span>{{ character.name }} - </span>
 
-        <strong>Power: </strong>
+          <strong>Power: </strong>
 
-        <span>{{ character.power }}</span>
+          <span>{{ character.power }}</span>
 
-        <span>Es el primero: {{ isFirst }}</span>
-        <!-- <span>Es el primero: {{ i === 0 }}</span> -->
+          <span>Es el primero: {{ isFirst }}</span>
+          <!-- <span>Es el primero: {{ i === 0 }}</span> -->
 
-        <span>Es el ultimo: {{ isLast }}</span>
-        <!-- <span>Es el ultimo: {{ i === characterList.length - 1 }}</span> -->
+          <span>Es el ultimo: {{ isLast }}</span>
+          <!-- <span>Es el ultimo: {{ i === characterList.length - 1 }}</span> -->
 
-        <span>Es Par: {{ isEven }}</span>
+          <span>Es Par: {{ isEven }}</span>
 
-        <span>Es Impar: {{ isOdd }}</span>
+          <span>Es Impar: {{ isOdd }}</span>
+        </div>
+
+        <button (click)="onDeleteCharacter(i)" class="btn btn-danger">X</button>
 
       </li>
     </ul>
